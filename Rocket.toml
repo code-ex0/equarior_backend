@@ -1,0 +1,2 @@
+[global.database.my_db]
+url = "postgres://user:password@localhost:8001/db"
