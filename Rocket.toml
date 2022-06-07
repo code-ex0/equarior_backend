@@ -1,2 +1,7 @@
 [global.database.my_db]
 url = "postgres://user:password@localhost:8001/db"
+
+[default]
+address = "0.0.0.0"
+port = 8000
+workers = 16

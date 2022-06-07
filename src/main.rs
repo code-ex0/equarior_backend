@@ -6,5 +6,6 @@ fn rocket() -> _ {
     rocket::build()
         .attach(PgConnection::fairing())
         .attach(user::stage())
-        .attach(auth::stage())
+        .attach(game::stage())
+        .attach(round::stage())
 }

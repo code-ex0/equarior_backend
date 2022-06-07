@@ -8,11 +8,15 @@ edition = "2021"
 [dependencies]
 diesel = { version = "1.4.7", features = ["postgres", "chrono"] }
 chrono = { version = "0.4", features = ["serde"] }
-async-trait = "0.1.53"
 bcrypt = "0.13.0"
+serde = { version = "1.0", features = ["derive"] }
+jwt = "0.16.0"
+rust-crypto = "0.2"
+hmac = "0.12.1"
+sha2 = "0.10.2"
 
 [dependencies.rocket]
-version = "0.5.0-rc.1"
+version = "0.5.0-rc.2"
 features = ["json"]
 
 [dependencies.rocket_sync_db_pools]
